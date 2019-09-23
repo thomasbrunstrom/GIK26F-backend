@@ -19,7 +19,8 @@ const settings = require("./settings.json");
 const app = express();
 
 // define the port we're using from the settings-file
-const port = settings.host.port;
+// if we're not in a "real" environment.
+const port = process.env.PORT || settings.host.port;
 
 // tell express to use cors
 app.use(cors());
