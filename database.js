@@ -21,6 +21,7 @@ const dbPromise = sqlite.open(connectionConfig.file, { Promise });
 // know it uses promises for each call
 module.exports = {
     getTodo : async (id) => {
+        throw new Error('Not implemented!');
         // await database promise
         const db = await dbPromise;
         // Database query
@@ -30,6 +31,7 @@ module.exports = {
         return db.get(query, [id]);
     },
     getTodos : async () => {
+        throw new Error('Not implemented!');
         // await database promise
         const db = await dbPromise;
         // Database query
