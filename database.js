@@ -1,5 +1,3 @@
-// require bluebird for our sqlite promise object
-const Promise = require('bluebird');
 // require sqlite to be able to use CRUD-operations on our database
 const sqlite3 = require('sqlite3');
 const { open } = require('sqlite');
