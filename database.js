@@ -32,6 +32,7 @@ module.exports = {
         return db.get(query, [id]);
     },
     getTodos : async () => {
+        throw new Error('Not implemented!');
         // Database query
         let query = "SELECT * FROM todos";
         const db = await dbPromise;
